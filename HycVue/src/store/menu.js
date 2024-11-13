@@ -1,16 +1,15 @@
 const state = {
-    isCollapse:false,
-    selectMenu:[]
-}
-
-const mutations = {
-    collapseMenu(state){
-        state.isCollapse=!state.isCollapse
+    isCollapse: false,
+    selectMenu: []
+  };
+  
+  const mutations = {
+    collapseMenu(state) {
+      state.isCollapse = !state.isCollapse;
     }
-}
-
-export default {
-    
+  };
+  
+  export default {
     state,
     mutations
-}
+  };

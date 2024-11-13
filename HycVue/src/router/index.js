@@ -48,17 +48,17 @@ const routes = [
                         },
                         component: Admin
                     },
-                    {
-                        path: 'group',
-                        meta: {
-                            id: '2',
-                            name: '菜单管理',
-                            icon: 'Setting',
-                            path: '/auth/group',
-                            describe: '菜单规则'
-                        },
-                        component: Group
-                    }
+                    // {
+                    //     path: 'group',
+                    //     meta: {
+                    //         id: '2',
+                    //         name: '菜单管理',
+                    //         icon: 'Setting',
+                    //         path: '/auth/group',
+                    //         describe: '菜单规则'
+                    //     },
+                    //     component: Group
+                    // }
                 ]
             },
 

@@ -1,9 +1,9 @@
-
-
 <template>
   <el-menu
-  :style="{width: !isCollapse ? '230px' : '80px'}"
+    
+    :style="{width: !isCollapse ? '230px' : '80px'}"
     class="aside-container"
+    :class="{ 'collapsed': isCollapse }" 
     default-active="2"
     text-color="#fff"
     @open="handleOpen"
@@ -14,9 +14,7 @@
       <img src="../../img/logo_o.png" alt="Logo" class="logo_img" />
       <p>{{isCollapse ? '' :'未知领域'}}</p>
     </div>
-
     <menuson index="1" :menuData="menuData" />
-
     <div class="return-home-btn">
       <el-link @click="goToHome" class="home-link">
         <el-icon><Back /></el-icon>
@@ -26,20 +24,17 @@
   </el-menu>
 </template>
 
-
 <script setup>
 import menuson from "./Menuson.vue";
 import { useRouter } from "vue-router";
-import { reactive,computed } from "vue";
+import { reactive, computed } from "vue";
 import { HomeFilled } from "@element-plus/icons-vue"; // 导入图标组件
-import { useStore } from 'vuex'
+import { useStore } from 'vuex';
 
 const router = useRouter();
 const menuData = reactive(router.options.routes[0].children);
-const store = useStore()
-const isCollapse = computed(() => store.state.menu.isCollapse)
-
-
+const store = useStore();
+const isCollapse = computed(() => store.state.menu.isCollapse);
 
 const handleOpen = () => {};
 const handleClose = () => {};
@@ -50,20 +45,19 @@ const goToHome = () => {
 };
 </script>
 
-
 <style lang="less" scoped>
 .aside-container {
   height: 85vh;
-  width: 200px;
+  width: 230px;
   background-color: #ffffff;
   border-right: 2px solid rgba(0, 0, 0, 0.3);
   margin-top: 50px;
-  
-  
-  
-  
-  
-  
+  transition: width 0.2s ease; 
+
+  &.collapsed {
+    width: 80px;  
+  }
+
   .logo_main {
     font-size: 25px;
     text-align: center;
@@ -71,7 +65,6 @@ const goToHome = () => {
     height: 150px;
     width: 100%;
     color: #000000;
-    // border: solid 1px;
     margin-bottom: 50px;
     margin-top: 0px;
     font-weight: bold;
@@ -87,7 +80,8 @@ const goToHome = () => {
 
   // 修改悬停时的背景颜色和字体颜色
   :deep(.el-menu-item:hover),
-  :deep(.el-sub-menu__title:hover) {
+  :deep(.el-sub-menu__title:hover)
+   {
     background-color: #3f51b5 !important;
     color: #ffffff !important; // 修改为您想要的悬停字体颜色
     font-weight: bold;
@@ -95,7 +89,8 @@ const goToHome = () => {
 
   // 修改默认的字体颜色
   :deep(.el-menu-item),
-  :deep(.el-sub-menu__title) {
+  :deep(.el-sub-menu__title)
+   {
     color: #000000 !important;
     font-size: 20px;
     font-weight: bold;
@@ -111,9 +106,6 @@ const goToHome = () => {
   .el-menu-item,
   .el-sub-menu {
     text-align: center;
-    // & > span {
-    //   margin-left: 20px;
-    // }
   }
 
   .return-home-btn {
