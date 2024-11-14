@@ -15,7 +15,7 @@
 
 
         <el-main>
-          <Router-view />
+          <Router />
         </el-main>
 
 
@@ -27,6 +27,7 @@
 <script setup>
 import Aside from "../components/aside.vue";
 import Header from "../components/navHeader.vue";
+import Router from "../components/Routermain.vue"
 </script>
 
 <style lang ="less" scoped>

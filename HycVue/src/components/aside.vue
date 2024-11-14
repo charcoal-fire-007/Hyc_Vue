@@ -9,6 +9,7 @@
     @open="handleOpen"
     @close="handleClose"
     :collapse="isCollapse"
+    :collapse-transition="true"
   >
     <div class="logo_main">
       <img src="../../img/logo_o.png" alt="Logo" class="logo_img" />
@@ -18,7 +19,7 @@
     <div class="return-home-btn">
       <el-link @click="goToHome" class="home-link">
         <el-icon><Back /></el-icon>
-        <span v-if="!isCollapse">返回</span>
+        <span v-if="!isCollapse">返回主页</span>
       </el-link>
     </div>
   </el-menu>

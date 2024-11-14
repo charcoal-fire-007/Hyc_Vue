@@ -67,7 +67,7 @@ const routes = [
                 path: 'wzly',
                 meta: {
                     id: '3',
-                    name: '未知领域',
+                    name: '全部订单',
                     icon: 'Coin'
                 },
                 children: [
