@@ -47,6 +47,7 @@
 import { ref, onMounted, onBeforeUnmount, watch } from "vue";
 import * as echarts from 'echarts';
 
+
 const getImageUrl = (logo_o) => {
   console.log("Generating image URL for:", logo_o);
   const url = new URL(`../../img/${logo_o}.png`, import.meta.url).href;
@@ -115,11 +116,11 @@ const tableLabel = ref({
 // 折线堆叠图
 const className = ref('chart');
 const width = ref('100%');
-const height = ref('500px');
+const height = ref('480px');
 
 const xAxisData = ref(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']);
 const seriesData = ref([{
-  name: '示例1',
+  name: 'JAVA',
   type: 'line',
   stack: '总量',
   emphasis: {
@@ -143,7 +144,7 @@ const seriesData = ref([{
   smooth: true, // 平滑曲线
   data: [67, 3213, 66, 67, 3228, 32, 1410, 2552, 3512, 555]
 }, {
-  name: '示例2',
+  name: 'VUE',
   type: 'line',
   stack: '总量',
   areaStyle: {},

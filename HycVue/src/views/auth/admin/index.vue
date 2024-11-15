@@ -1,10 +1,11 @@
 <template>
-    <div>admin</div>
+<div>
+    admissssssssssssssssssssssss
+</div>
 </template>
 
 
 <script setup>
-
 
 </script>
 

@@ -71,18 +71,18 @@ const routes = [
                     icon: 'Coin'
                 },
                 children: [
-                    {
-                        path: '',
-                        alias: ['staff'],
-                        meta: {
-                            id: '1',
-                            name: '钱包',
-                            icon: 'Checked',
-                            path: '/wzly/staff',
-                            describe: '可以进行修改'
-                        },
-                        component: Staff
-                    },
+                    // {
+                    //     path: '',
+                    //     alias: ['staff'],
+                    //     meta: {
+                    //         id: '1',
+                    //         name: '钱包',
+                    //         icon: 'Checked',
+                    //         path: '/wzly/staff',
+                    //         describe: '可以进行修改'
+                    //     },
+                    //     component: Staff
+                    // },
                     {
                         path: 'order',
                         meta: {

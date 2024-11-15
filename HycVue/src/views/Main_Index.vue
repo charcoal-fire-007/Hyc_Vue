@@ -4,7 +4,6 @@
 
     
     <el-container>
-      <!-- <el-aside width="200px">Aside</el-aside> -->
       <Aside />
       <el-container>
 
@@ -15,6 +14,8 @@
 
 
         <el-main>
+
+          <!-- <router-view /> -->
           <Router />
         </el-main>
 
