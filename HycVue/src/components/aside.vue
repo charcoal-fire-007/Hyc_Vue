@@ -10,6 +10,7 @@
     :collapse="isCollapse"
     :collapse-transition="false"
   >
+  <!-- ↑不允许过渡效果：即设置为flase -->
     <div class="logo_main">
       <img src="../../img/logo_o.png" alt="Logo" class="logo_img" /> <!-- 显示 logo 图片 -->
       <p>{{ isCollapse ? '' : '未知领域' }}</p> <!-- 根据是否折叠显示或隐藏公司名称 -->

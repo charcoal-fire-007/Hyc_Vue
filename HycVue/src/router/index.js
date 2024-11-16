@@ -6,8 +6,9 @@ import Login from '../views/Login_Many/index.vue'
 
 import Dashboard from '../views/dashboard/index.vue'; 
 import Admin from '../views/auth/admin/index.vue'; 
-import Group from '../views/auth/group/index.vue'; 
-import Staff from '../views/wzly/staff/index.vue'; 
+//以下是未使用路由即是废除方案
+// import Group from '../views/auth/group/index.vue'; 
+// import Staff from '../views/wzly/staff/index.vue'; 
 import Order from '../views/wzly/order/index.vue'; 
 
 
@@ -48,6 +49,8 @@ const routes = [
                         },
                         component: Admin
                     },
+                    //已废除代码
+
                     // {
                     //     path: 'group',
                     //     meta: {
@@ -71,6 +74,7 @@ const routes = [
                     icon: 'Coin'
                 },
                 children: [
+                    //已废除代码
                     // {
                     //     path: '',
                     //     alias: ['staff'],

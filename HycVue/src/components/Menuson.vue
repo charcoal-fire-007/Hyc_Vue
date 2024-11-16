@@ -1,4 +1,6 @@
 <template>
+<!-- 根据Vue 3的规范，模板根节点不能包含多个根元素，并且v-for指令不能直接用于<template>标签上。 
+  但是是可以使用的-->
   <template
     v-for="(item, index) in props.menuData"
     :key="`${props.index}-${item.meta.id}`"
@@ -10,7 +12,8 @@
       class="elmenuitem"
     >
       <el-icon size="20">
-        <component :is="item.meta.icon"></component>
+        <component :is="item.meta.icon">
+        </component>
       </el-icon>
       <span>{{ item.meta.name }}</span>
     </el-menu-item>
@@ -32,7 +35,9 @@
       />
     </el-sub-menu>
   </template>
-</template>
+ </template>
+
+
 
 <script setup>
 import { useRouter } from 'vue-router'

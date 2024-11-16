@@ -4,6 +4,7 @@
       <el-icon class="icon" size="20" @click="store.commit('collapseMenu')"><Fold /></el-icon>
     <!-- </div> -->
     <!-- <div class="header-right"> -->
+      <!-- 以上代码是一个废除方案 -->
       <el-dropdown>
         <div class="el-dropdown-link flex-box">
           <el-avatar
@@ -15,9 +16,9 @@
           <el-dropdown-menu >
             <el-dropdown-item >未知领域</el-dropdown-item>
             <el-dropdown-item>未知领域</el-dropdown-item>
-            <el-dropdown-item>未知领域</el-dropdown-item>
+            <!-- <el-dropdown-item>未知领域</el-dropdown-item>
             <el-dropdown-item disabled>未知领域</el-dropdown-item>
-            <el-dropdown-item divided>未知领域</el-dropdown-item>
+            <el-dropdown-item divided>未知领域</el-dropdown-item> -->
           </el-dropdown-menu>
         </template>
       </el-dropdown>

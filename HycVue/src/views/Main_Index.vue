@@ -1,26 +1,14 @@
 <template>
   <div class="common-layout">
-
-
-    
     <el-container>
       <Aside />
       <el-container>
-
-
         <el-header>
           <Header />
         </el-header>
-
-
         <el-main>
-
-          <!-- <router-view /> -->
           <Router />
         </el-main>
-
-
-
       </el-container>
     </el-container>
   </div>
@@ -28,7 +16,7 @@
 <script setup>
 import Aside from "../components/aside.vue";
 import Header from "../components/navHeader.vue";
-import Router from "../components/Routermain.vue"
+import Router from "../components/Routermain.vue";
 </script>
 
 <style lang ="less" scoped>
